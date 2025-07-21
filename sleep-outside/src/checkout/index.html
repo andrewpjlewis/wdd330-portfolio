@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sleep Outside | Checkout</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/checkout.js" type="module"></script>
+  </head>
+
+  <body class="checkout">
+    <header class="divider" id="main-header"></header>
+
+    <nav class="breadcrumbs" id="breadcrumbs"></nav>
+
+    <main class="divider">
+      <section class="products">
+        <h2>Review & Place your Order</h2>
+      </section>
+      <form action="submit" class="checkoutForm">
+        <fieldset>
+          <legend>Shipping</legend>
+          <label for="fname">First Name</label><br />
+          <input type="text" name="fname" required/><br />
+
+          <label for="lname">Last Name</label><br />
+          <input type="text" name="lname" required/><br />
+
+          <label for="street"> Street</label><br />
+          <input type="text" name="street" required/><br />
+
+          <label for="city">City</label><br />
+          <input type="text" name="city" required/><br />
+
+          <label for="state">State</label><br />
+          <input type="text" name="state" pattern="[A-Z]{2}" required/><br />
+
+          <label for="zip">Zip Code</label><br />
+          <input type="text" name="zip" pattern="[0-9]{5}" id="zip" required/><br />
+        </fieldset>
+        <fieldset>
+          <legend>Card Name</legend>
+          <label for="cardNumber">Card Number</label><br />
+          <input type="text" name="cardNumber" pattern="[0-9]{16}" required/><br />
+
+          <label for="experation">Expiration Date</label><br />
+          <input type="text" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" name="expiration" required/><br />
+
+          <label for="code">Security Code</label><br />
+          <input type="text" name="code" pattern="[0-9]{3}" required/><br />
+        </fieldset>
+        <fieldset>
+          <legend>Order Summary</legend>
+
+          <label for="subtotal" id="items">Item Subtotal</label><br />
+          <input type="text" name="subtotal" readonly required/><br />
+
+          <label for="shipping">Shipping Estimate</label><br />
+          <input type="text" name="shipping" readonly required/><br />
+
+          <label for="tax">Tax</label><br />
+          <input type="text" name="tax" readonly required/><br />
+
+          <label for="orderTotal">Order Total</label><br />
+          <input type="text" name="orderTotal" readonly required/><br />
+        </fieldset>
+        <button type="submit" id="checkout-btn">Checkout</button>
+      </form>
+    </main>
+
+    <footer id="main-footer"></footer>
+  </body>
+</html>

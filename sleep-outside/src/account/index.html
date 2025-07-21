@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Login</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="../js/account.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <header class="divider" id="main-header"></header>
+    <main class="divider">
+      <form action="submit" class="checkoutForm" id="signupForm">
+        <fieldset>
+          <legend>Sign Up</legend>
+          <label for="email">E-Mail</label><br />
+          <input id="signupEmail" type="email" name="email" required/><br />
+
+          <label for="password">Password</label><br />
+          <input id="signupPassword" type="password" name="password" required/><br />
+          <label><input type="checkbox" id="signupPasswordShow">Show Password</label>
+        </fieldset>
+        <button type="submit" id="signup">Create Account</button>
+      </form>     
+    </main>
+    <footer id="main-footer"></footer>
+  </body>
+</html>
